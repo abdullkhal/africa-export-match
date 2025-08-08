@@ -5,24 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Africa Export Match — Connect with Vetted African Exporters</title>
   <meta name="description" content="Africa Export Match connects vetted African exporters with global buyers. Discover suppliers, request quotes, and start trading with confidence.">
+  <link rel="canonical" href="https://www.africaexportmatch.com/">
   <meta property="og:title" content="Africa Export Match">
   <meta property="og:description" content="Connecting African exporters with the global market.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.africaexportmatch.com/">
+  <meta property="og:image" content="https://www.africaexportmatch.com/assets/og-image.png">
+  <link rel="icon" href="/assets/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/favicon.png" sizes="512x512">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav">
-      <div class="logo">Africa Export Match</div>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="logo"><img src="/assets/logo.svg" alt="Africa Export Match logo"></div>
       <div class="nav-cta">
         <a class="btn btn-outline" href="#contact">Contact</a>
         <a class="btn btn-light" href="suppliers.html">Suppliers</a>
+        <a class="btn btn-light" href="privacy.html">Privacy</a>
       </div>
     </nav>
-    <section class="hero">
+    <section class="hero" role="banner" aria-label="Hero">
       <div class="hero-content">
         <h1>Match Global Buyers with Trusted African Exporters</h1>
         <p>We curate reliable suppliers, simplify introductions, and help both sides trade with confidence.</p>
@@ -69,10 +74,9 @@
       </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" aria-label="Contact form">
       <h2>Contact</h2>
       <form class="form" action="https://formsubmit.co/info@africaexportmatch.com" method="POST">
-        <!-- FormSubmit options -->
         <input type="hidden" name="_subject" value="Buyer request via website">
         <input type="hidden" name="_next" value="https://www.africaexportmatch.com/thank-you.html">
         <input type="text" name="_honey" style="display:none">
@@ -80,15 +84,15 @@
 
         <div class="row">
           <label for="name">Your name</label>
-          <input type="text" id="name" name="Name" required>
+          <input type="text" id="name" name="Name" required autocomplete="name">
         </div>
         <div class="row">
           <label for="company">Company</label>
-          <input type="text" id="company" name="Company">
+          <input type="text" id="company" name="Company" autocomplete="organization">
         </div>
         <div class="row">
           <label for="email">Your email</label>
-          <input type="email" id="email" name="Email" required>
+          <input type="email" id="email" name="Email" required autocomplete="email">
         </div>
         <div class="row">
           <label for="message">What are you looking to source?</label>
@@ -97,13 +101,14 @@
         <button class="btn" type="submit">Send</button>
         <p class="hint">First time only: FormSubmit will email <strong>info@africaexportmatch.com</strong> a verification link. Click it once, and all future submissions come straight to your inbox.</p>
       </form>
+      <p class="hint">Or email us directly: <a href="mailto:info@africaexportmatch.com">info@africaexportmatch.com</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
       <p>© 2025 Africa Export Match. All rights reserved.</p>
-      <p><a href="mailto:info@africaexportmatch.com">info@africaexportmatch.com</a></p>
+      <p><a href="mailto:info@africaexportmatch.com">info@africaexportmatch.com</a> • <a href="/terms.html">Terms</a> • <a href="/privacy.html">Privacy</a></p>
     </div>
   </footer>
 </body>

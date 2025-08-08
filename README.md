@@ -1,14 +1,16 @@
-# Africa Export Match — Website (v2.1)
+# Africa Export Match — Website (v2.2)
 
-**V2.1 highlights**
-- Real contact form (no email app needed) using FormSubmit
-- New `suppliers.html` intake form
-- Thank-you page + redirects
-- SEO sitemap updated
+**V2.2 improvements**
+- Brand assets: logo, favicon, OpenGraph image
+- Privacy & Terms pages
+- Custom 404 page
+- Better SEO meta (canonical + OG image)
+- Accessibility tweaks and ARIA labels
 
 **Email destination:** info@africaexportmatch.com
 
-**Heads up (one-time):** The first submission will trigger a FormSubmit verification email to info@africaexportmatch.com. Click the link once; after that, all submissions go straight to your inbox.
-
 **Deploy**
 Upload everything to the repo root. Keep `CNAME` set to www.africaexportmatch.com and Pages enabled from `main`.
+
+**Optional next**
+- Google Search Console & Analytics — I can wire verification and tracking if you share an ID.
