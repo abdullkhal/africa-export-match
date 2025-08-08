@@ -1,13 +1,19 @@
-# Africa Export Match
+# Africa Export Match — Website (v2)
 
-Static landing page for Africa Export Match.
+Version 2 of the static site hosted on GitHub Pages.
 
-## Custom domain
-This repo is configured for **www.africaexportmatch.com** via the `CNAME` file.
+## What's new
+- Strong hero section + clearer messaging
+- Trust cards + 'How it works'
+- Contact form that opens the user's email client (no backend)
+- Copy-to-clipboard for email
+- SEO basics: OpenGraph, sitemap, robots, JSON-LD
+- Responsive layout
 
-## Contact
-Email link points to **info@africaexportmatch.com** (update in `index.html` if needed).
+## Configure
+- Contact email is **info@africaexportmatch.com** (set in `index.html` and `script.js` via AEM_EMAIL).
+- Custom domain via `CNAME`: **www.africaexportmatch.com**
+- `.nojekyll` included
 
-## Deploy on GitHub Pages
-- Settings → Pages → Deploy from branch → `main` (root).
-- After DNS + certificate, enable **Enforce HTTPS**.
+## Deploy
+Upload/commit files to your repo root and ensure GitHub Pages is enabled from `main`.

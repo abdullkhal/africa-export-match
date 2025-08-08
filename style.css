@@ -1,74 +1,56 @@
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: #333;
-  background: #fff8f0;
+:root{
+  --brand:#004225;
+  --brand-2:#0a6b3e;
+  --bg:#fffefb;
+  --ink:#1f2937;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --accent:#e8f7ee;
 }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
 
-header {
-  background: #004225;
-  color: white;
-  padding: 2.5rem 1.5rem;
-  text-align: center;
-}
+.nav{max-width:1100px;margin:0 auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;color:#fff}
+.site-header{background:linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.35)), url('https://images.unsplash.com/photo-1599050751790-5bb114c47d6d?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat}
+.hero{max-width:1100px;margin:0 auto;padding:72px 18px 96px}
+.hero h1{color:#fff;font-size:2.2rem;line-height:1.2;margin:0 0 10px}
+.hero p{color:#f1f5f9;max-width:720px;margin:0 0 20px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap}
 
-header h1 {
-  margin: 0;
-  font-size: 2.6rem;
-  letter-spacing: 0.5px;
-}
+.btn{background:var(--brand);color:#fff;border:none;border-radius:10px;padding:12px 16px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
+.btn:hover{filter:brightness(1.02)}
+.btn-light{background:#fff;color:var(--brand)}
+.btn-outline{background:transparent;color:#fff;border:2px solid #ffffff7a}
+.btn-mini{padding:6px 10px;border-radius:8px;font-size:.9rem}
 
-header p {
-  margin: 0.75rem 0 0;
-  font-size: 1.1rem;
-  opacity: 0.95;
-}
+section{max-width:1100px;margin:0 auto;padding:32px 18px}
+h2{font-size:1.8rem;margin:0 0 10px}
+p{color:var(--ink)}
 
-section {
-  padding: 2rem 1.25rem;
-  max-width: 980px;
-  margin: auto;
-}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);border-radius:14px;padding:16px;box-shadow:0 6px 20px rgba(0,0,0,.06)}
+.card.small h3{margin:0 0 6px}
 
-.mission { background: #f9f9f9; }
+.how-it-works .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:8px}
+.step{background:var(--card);border-radius:14px;padding:16px;border:1px solid #eef2f7}
+.step .num{background:var(--accent);color:var(--brand-2);border-radius:50%;width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:8px}
 
-.how-it-works ol { padding-left: 1.2rem; }
+.sectors .card h3{margin:0 0 4px}
 
-.sectors .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-}
+.cta-band{background:var(--accent);}
+.cta-inner{max-width:1100px;margin:0 auto;padding:28px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.cta-inner h2{margin:0}
 
-.card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
+.contact .contact-form{max-width:680px;margin-top:10px}
+.contact .row{display:flex;flex-direction:column;margin-bottom:12px}
+.contact label{font-weight:600;margin-bottom:6px}
+.contact input,.contact textarea{padding:12px;border-radius:10px;border:1px solid #d1d5db;background:#fff;outline:none}
+.contact input:focus,.contact textarea:focus{border-color:var(--brand)}
+.form-hint{color:var(--muted);font-size:.9rem}
 
-.trust ul {
-  list-style: disc;
-  padding-left: 1.2rem;
-}
-
-.cta {
-  background: #e0ffe0;
-  text-align: center;
-  border-top: 1px solid #d7f7d7;
-  border-bottom: 1px solid #d7f7d7;
-}
-
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-}
-
-a { color: #004225; font-weight: 700; text-decoration: none; }
-a:hover { text-decoration: underline; }
+.site-footer{background:#0b1b13;color:#cbd5e1;margin-top:10px}
+.footer-inner{max-width:1100px;margin:0 auto;padding:20px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.footer-inner a{color:#cbd5e1}

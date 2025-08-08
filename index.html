@@ -1,62 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Africa Export Match</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Africa Export Match — Connect with Vetted African Exporters</title>
   <meta name="description" content="Africa Export Match connects vetted African exporters with global buyers. Discover suppliers, request quotes, and start trading with confidence.">
   <meta property="og:title" content="Africa Export Match">
   <meta property="og:description" content="Connecting African exporters with the global market.">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta property="og:url" content="https://www.africaexportmatch.com/">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "Organization", "name": "Africa Export Match", "url": "https://www.africaexportmatch.com/", "email": "info@africaexportmatch.com", "sameAs": []}
+  </script>
 </head>
 <body>
-  <header>
-    <h1>Africa Export Match</h1>
-    <p>Connecting African Exporters with the Global Market</p>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="logo">Africa Export Match</div>
+      <div class="nav-cta"><a class="btn btn-outline" href="#contact">Contact</a></div>
+    </nav>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Match Global Buyers with Trusted African Exporters</h1>
+        <p>We curate reliable suppliers, simplify introductions, and help both sides trade with confidence.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Request an Introduction</a>
+          <a class="btn btn-light" href="#how">How it works</a>
+        </div>
+      </div>
+    </section>
   </header>
 
-  <section class="mission">
-    <h2>Our Mission</h2>
-    <p>We bridge the gap between African producers and international buyers, enabling seamless trade and showcasing the continent's potential in global exports.</p>
-  </section>
+  <main>
+    <section class="trust-badges" aria-label="Reasons to trust">
+      <div class="grid">
+        <div class="card small">
+          <h3>Vetted suppliers</h3>
+          <p>We screen for quality, documentation, and export readiness.</p>
+        </div>
+        <div class="card small">
+          <h3>Faster introductions</h3>
+          <p>Curated matches based on your specs, MOQs, and timelines.</p>
+        </div>
+        <div class="card small">
+          <h3>Compliance support</h3>
+          <p>Guidance on certifications, contracts, and logistics partners.</p>
+        </div>
+      </div>
+    </section>
 
-  <section class="how-it-works">
-    <h2>How It Works</h2>
-    <ol>
-      <li><strong>Register:</strong> Exporters and buyers create a profile.</li>
-      <li><strong>Match:</strong> Our platform suggests potential trade matches.</li>
-      <li><strong>Connect:</strong> Communicate and start trading confidently.</li>
-    </ol>
-  </section>
+    <section id="how" class="how-it-works">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step"><span class="num">1</span><h3>Tell us what you need</h3><p>Share product specs, volumes, target price, and destination.</p></div>
+        <div class="step"><span class="num">2</span><h3>Get curated matches</h3><p>We shortlist verified suppliers that can meet your demand.</p></div>
+        <div class="step"><span class="num">3</span><h3>Warm introductions</h3><p>Start the conversation with all details aligned from day one.</p></div>
+      </div>
+    </section>
 
-  <section class="sectors">
-    <h2>Key Sectors</h2>
-    <div class="grid">
-      <div class="card"><h3>Agri‑commodities</h3><p>Cocoa, coffee, cashews, sesame, spices, fresh produce.</p></div>
-      <div class="card"><h3>Minerals & Metals</h3><p>Gold, manganese, bauxite, copper, industrial inputs.</p></div>
-      <div class="card"><h3>Manufactured Goods</h3><p>Textiles, leather goods, packaging, FMCG.</p></div>
-      <div class="card"><h3>Specialty Products</h3><p>Shea, hibiscus, moringa, essential oils.</p></div>
+    <section class="sectors">
+      <h2>Key sectors</h2>
+      <div class="grid">
+        <div class="card"><h3>Agri‑commodities</h3><p>Cocoa, coffee, cashews, sesame, spices, fresh produce.</p></div>
+        <div class="card"><h3>Minerals & Metals</h3><p>Manganese, bauxite, copper concentrates, industrial inputs.</p></div>
+        <div class="card"><h3>Manufactured Goods</h3><p>Textiles, leather, packaging, light industrial products.</p></div>
+        <div class="card"><h3>Specialty Products</h3><p>Shea, hibiscus, moringa, essential oils, botanicals.</p></div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="cta-inner">
+        <h2>Ready to explore suppliers?</h2>
+        <p>Get an introduction suited to your requirements within 3–5 business days.</p>
+        <a class="btn" href="#contact">Request an intro</a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Prefer email? <a id="emailLink" href="mailto:info@africaexportmatch.com">info@africaexportmatch.com</a> <button class="btn btn-mini" id="copyEmail">Copy</button></p>
+
+      <form id="contactForm" class="contact-form" onsubmit="return sendMailto(event)">
+        <div class="row">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="row">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div class="row">
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="row">
+          <label for="message">What are you looking to source?</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button class="btn" type="submit">Send</button>
+        <p class="form-hint">This form opens your email app pre-filled. Don’t have an email app? Click “Copy” above and email us directly.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2025 Africa Export Match. All rights reserved.</p>
+      <p><a href="mailto:info@africaexportmatch.com">info@africaexportmatch.com</a></p>
     </div>
-  </section>
-
-  <section class="trust">
-    <h2>Why Africa Export Match</h2>
-    <ul>
-      <li><strong>Vetted suppliers:</strong> Due diligence and trade history where available.</li>
-      <li><strong>Quality & compliance:</strong> Support with certifications and export docs.</li>
-      <li><strong>Fast introductions:</strong> Curated matches based on buyer specs.</li>
-    </ul>
-  </section>
-
-  <section class="cta">
-    <h2>Ready to Trade Globally?</h2>
-    <p>Email us to get started: <a href="mailto:info@africaexportmatch.com">info@africaexportmatch.com</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Africa Export Match. All rights reserved.</p>
   </footer>
+
+  <script>
+    const AEM_EMAIL = "info@africaexportmatch.com";
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>
