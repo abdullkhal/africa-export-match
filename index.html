@@ -26,37 +26,25 @@
   </script>
 </head>
 <body>
-  <header class="navbar">
-    <div class="container navbar-inner">
-      <div class="brand">
-        <img src="/assets/logo.svg" alt="Africa Export Match logo">
-        <span>Africa Export Match</span>
-      </div>
-      <div class="nav-actions">
-        <a class="btn-ghost" href="#how">How it works</a>
-        <a class="btn-ghost" href="suppliers.html">Suppliers</a>
-        <a class="btn" href="#contact">Request intro</a>
-      </div>
+  <header class="masthead">
+    <div class="container mast-inner">
+      <div class="mast-logo"><img src="/assets/logo.svg" alt="Africa Export Match logo" /></div>
+      <nav class="mast-nav" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="suppliers.html">Suppliers</a>
+        <a class="cta" href="#contact">Request intro</a>
+      </nav>
     </div>
   </header>
 
   <section class="hero">
-    <div class="container hero-inner">
-      <div>
-        <h1>Meet trusted African exporters — fast</h1>
-        <p>We pre‑screen suppliers, match them to your specs, and make warm introductions so deals start on the right foot.</p>
-        <div style="display:flex;gap:10px;flex-wrap:wrap">
-          <a class="btn" href="#contact">Request an introduction</a>
-          <a class="btn-ghost" href="#sectors">What we source</a>
-        </div>
-        <div class="badges">
-          <div class="badge"><h3>Vetted suppliers</h3><p>Quality checks, documentation & export readiness.</p></div>
-          <div class="badge"><h3>Faster intros</h3><p>Curated matches in days, not months.</p></div>
-          <div class="badge"><h3>Compliance help</h3><p>Certifications, contracts & logistics partners.</p></div>
-        </div>
-      </div>
-      <div class="hero-card">
-        <div class="hero-media" aria-hidden="true"></div>
+    <div class="container">
+      <h1 style="margin:8px 0 6px">Meet trusted African exporters — fast</h1>
+      <p class="lead">We pre-screen suppliers, match them to your specs, and make warm introductions so deals start on the right foot.</p>
+      <div class="badges">
+        <div class="badge"><h3>Vetted suppliers</h3><p>Quality checks, documentation & export readiness.</p></div>
+        <div class="badge"><h3>Faster intros</h3><p>Curated matches in days, not months.</p></div>
+        <div class="badge"><h3>Compliance help</h3><p>Certifications, contracts & logistics partners.</p></div>
       </div>
     </div>
   </section>
@@ -99,7 +87,7 @@
   </section>
 
   <section id="contact" class="section">
-    <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+    <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
       <div>
         <h2>Start your request</h2>
         <p class="lead">Tell us what you need — we’ll reply with curated options.</p>
@@ -113,16 +101,21 @@
             <input class="input" name="Company" placeholder="Company">
             <input class="input" type="email" name="Email" placeholder="Work email" required>
             <textarea class="input" name="Message" rows="4" placeholder="Product, volume, specs, destination" required></textarea>
-            <button class="btn" type="submit">Send request</button>
+            <button class="input" style="background:var(--brand);color:#fff;border:none;cursor:pointer" type="submit">Send request</button>
           </div>
         </form>
         <p class="small">Or email us: <a href="mailto:info@africaexportmatch.com">info@africaexportmatch.com</a></p>
       </div>
       <div>
         <h2>Frequently asked</h2>
-        <div class="faq-item"><h3 class="faq-q">Do you charge buyers or suppliers?<span>+</span></h3><div class="faq-a">We’re flexible. Depending on the engagement, we may charge the buyer, supplier, or work on a success fee.</div></div>
-        <div class="faq-item"><h3 class="faq-q">How do you vet suppliers?<span>+</span></h3><div class="faq-a">We screen documentation, certifications, references, export readiness, and production capacity.</div></div>
-        <div class="faq-item"><h3 class="faq-q">How fast are introductions?<span>+</span></h3><div class="faq-a">Typically 3–5 business days after we receive a complete brief.</div></div>
+        <div class="faq-item" style="border:1px solid rgba(15,23,32,.08);border-radius:14px">
+          <h3 class="faq-q" style="margin:0;padding:10px 12px;cursor:pointer">Do you charge buyers or suppliers?</h3>
+          <div class="faq-a" style="display:none;padding:0 12px 12px;color:var(--muted)">We’re flexible. Depending on the engagement, we may charge the buyer, supplier, or work on a success fee.</div>
+        </div>
+        <div class="faq-item" style="border:1px solid rgba(15,23,32,.08);border-radius:14px;margin-top:8px">
+          <h3 class="faq-q" style="margin:0;padding:10px 12px;cursor:pointer">How do you vet suppliers?</h3>
+          <div class="faq-a" style="display:none;padding:0 12px 12px;color:var(--muted)">We screen documentation, certifications, references, export readiness, and production capacity.</div>
+        </div>
       </div>
     </div>
   </section>
