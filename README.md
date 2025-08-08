@@ -1,1 +1,1 @@
-# AEM v2.7.1 — polish + speed (accent bar, lazy images, logos strip)
+# AEM v2.8.1 — Bigger header text (80px), spaced nav, light background
