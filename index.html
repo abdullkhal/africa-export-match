@@ -12,15 +12,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
-  <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Organization", "name": "Africa Export Match", "url": "https://www.africaexportmatch.com/", "email": "info@africaexportmatch.com", "sameAs": []}
-  </script>
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
       <div class="logo">Africa Export Match</div>
-      <div class="nav-cta"><a class="btn btn-outline" href="#contact">Contact</a></div>
+      <div class="nav-cta">
+        <a class="btn btn-outline" href="#contact">Contact</a>
+        <a class="btn btn-light" href="suppliers.html">Suppliers</a>
+      </div>
     </nav>
     <section class="hero">
       <div class="hero-content">
@@ -61,16 +61,6 @@
       </div>
     </section>
 
-    <section class="sectors">
-      <h2>Key sectors</h2>
-      <div class="grid">
-        <div class="card"><h3>Agri‑commodities</h3><p>Cocoa, coffee, cashews, sesame, spices, fresh produce.</p></div>
-        <div class="card"><h3>Minerals & Metals</h3><p>Manganese, bauxite, copper concentrates, industrial inputs.</p></div>
-        <div class="card"><h3>Manufactured Goods</h3><p>Textiles, leather, packaging, light industrial products.</p></div>
-        <div class="card"><h3>Specialty Products</h3><p>Shea, hibiscus, moringa, essential oils, botanicals.</p></div>
-      </div>
-    </section>
-
     <section class="cta-band">
       <div class="cta-inner">
         <h2>Ready to explore suppliers?</h2>
@@ -81,27 +71,31 @@
 
     <section id="contact" class="contact">
       <h2>Contact</h2>
-      <p>Prefer email? <a id="emailLink" href="mailto:info@africaexportmatch.com">info@africaexportmatch.com</a> <button class="btn btn-mini" id="copyEmail">Copy</button></p>
+      <form class="form" action="https://formsubmit.co/info@africaexportmatch.com" method="POST">
+        <!-- FormSubmit options -->
+        <input type="hidden" name="_subject" value="Buyer request via website">
+        <input type="hidden" name="_next" value="https://www.africaexportmatch.com/thank-you.html">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="true">
 
-      <form id="contactForm" class="contact-form" onsubmit="return sendMailto(event)">
         <div class="row">
           <label for="name">Your name</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="Name" required>
         </div>
         <div class="row">
           <label for="company">Company</label>
-          <input type="text" id="company" name="company">
+          <input type="text" id="company" name="Company">
         </div>
         <div class="row">
           <label for="email">Your email</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="Email" required>
         </div>
         <div class="row">
           <label for="message">What are you looking to source?</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+          <textarea id="message" name="Message" rows="5" required></textarea>
         </div>
         <button class="btn" type="submit">Send</button>
-        <p class="form-hint">This form opens your email app pre-filled. Don’t have an email app? Click “Copy” above and email us directly.</p>
+        <p class="hint">First time only: FormSubmit will email <strong>info@africaexportmatch.com</strong> a verification link. Click it once, and all future submissions come straight to your inbox.</p>
       </form>
     </section>
   </main>
@@ -112,10 +106,5 @@
       <p><a href="mailto:info@africaexportmatch.com">info@africaexportmatch.com</a></p>
     </div>
   </footer>
-
-  <script>
-    const AEM_EMAIL = "info@africaexportmatch.com";
-  </script>
-  <script src="script.js"></script>
 </body>
 </html>

@@ -1,19 +1,14 @@
-# Africa Export Match — Website (v2)
+# Africa Export Match — Website (v2.1)
 
-Version 2 of the static site hosted on GitHub Pages.
+**V2.1 highlights**
+- Real contact form (no email app needed) using FormSubmit
+- New `suppliers.html` intake form
+- Thank-you page + redirects
+- SEO sitemap updated
 
-## What's new
-- Strong hero section + clearer messaging
-- Trust cards + 'How it works'
-- Contact form that opens the user's email client (no backend)
-- Copy-to-clipboard for email
-- SEO basics: OpenGraph, sitemap, robots, JSON-LD
-- Responsive layout
+**Email destination:** info@africaexportmatch.com
 
-## Configure
-- Contact email is **info@africaexportmatch.com** (set in `index.html` and `script.js` via AEM_EMAIL).
-- Custom domain via `CNAME`: **www.africaexportmatch.com**
-- `.nojekyll` included
+**Heads up (one-time):** The first submission will trigger a FormSubmit verification email to info@africaexportmatch.com. Click the link once; after that, all submissions go straight to your inbox.
 
-## Deploy
-Upload/commit files to your repo root and ensure GitHub Pages is enabled from `main`.
+**Deploy**
+Upload everything to the repo root. Keep `CNAME` set to www.africaexportmatch.com and Pages enabled from `main`.

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Supplier Intake — Africa Export Match</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="logo">Africa Export Match</div>
+      <div class="nav-cta">
+        <a class="btn btn-light" href="/">Home</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Supplier Registration</h1>
+        <p>Tell us what you export and we’ll reach out with buyer requests that match your capacity.</p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section>
+      <form class="form" action="https://formsubmit.co/info@africaexportmatch.com" method="POST">
+        <input type="hidden" name="_subject" value="Supplier registration via website">
+        <input type="hidden" name="_next" value="https://www.africaexportmatch.com/thank-you.html">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="true">
+        <div class="row">
+          <label for="s-name">Company name</label>
+          <input type="text" id="s-name" name="Company Name" required>
+        </div>
+        <div class="row">
+          <label for="s-contact">Contact person</label>
+          <input type="text" id="s-contact" name="Contact Person" required>
+        </div>
+        <div class="row">
+          <label for="s-email">Email</label>
+          <input type="email" id="s-email" name="Email" required>
+        </div>
+        <div class="row">
+          <label for="s-country">Country</label>
+          <input type="text" id="s-country" name="Country" required>
+        </div>
+        <div class="row">
+          <label for="s-products">Products (with specs)</label>
+          <textarea id="s-products" name="Products" rows="4" placeholder="e.g., Raw cashews W320, 100 MT/month; Cocoa beans Grade 1..." required></textarea>
+        </div>
+        <div class="row">
+          <label for="s-certs">Certifications (if any)</label>
+          <input type="text" id="s-certs" name="Certifications" placeholder="e.g., ISO, Organic, Fairtrade">
+        </div>
+        <div class="row">
+          <label for="s-capacity">Monthly capacity</label>
+          <input type="text" id="s-capacity" name="Capacity" placeholder="e.g., 50 MT">
+        </div>
+        <button class="btn" type="submit">Submit</button>
+        <p class="hint">First time only: FormSubmit will email <strong>info@africaexportmatch.com</strong> once to verify. After that, everything goes directly to your inbox.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2025 Africa Export Match. All rights reserved.</p>
+      <p><a href="mailto:info@africaexportmatch.com">info@africaexportmatch.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
