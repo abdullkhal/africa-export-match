@@ -1,31 +1,13 @@
 
-function sendMailto(e){
-  e.preventDefault();
-  const name = document.getElementById('name').value.trim();
-  const company = document.getElementById('company').value.trim();
-  const from = document.getElementById('email').value.trim();
-  const message = document.getElementById('message').value.trim();
+// Sticky shadow on navbar
+const nav = document.querySelector('.navbar');
+const onScroll = () => {
+  if (window.scrollY > 4) nav.style.boxShadow = '0 8px 30px rgba(0,0,0,.35)';
+  else nav.style.boxShadow = 'none';
+};
+window.addEventListener('scroll', onScroll);
 
-  const subject = encodeURIComponent('Supplier introduction request');
-  const body = encodeURIComponent(
-    `Name: ${name}%0D%0ACompany: ${company}%0D%0AEmail: ${from}%0D%0A%0D%0ARequest:%0D%0A${message}`
-  );
-
-  window.location.href = `mailto:${AEM_EMAIL}?subject=${subject}&body=${body}`;
-  return false;
-}
-
-document.addEventListener('DOMContentLoaded', function(){
-  const copyBtn = document.getElementById('copyEmail');
-  if(copyBtn){
-    copyBtn.addEventListener('click', async () => {
-      try{
-        await navigator.clipboard.writeText(AEM_EMAIL);
-        copyBtn.textContent = 'Copied';
-        setTimeout(()=> copyBtn.textContent='Copy', 1500);
-      }catch(err){
-        alert('Email: ' + AEM_EMAIL);
-      }
-    });
-  }
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => btn.parentElement.classList.toggle('open'));
 });
