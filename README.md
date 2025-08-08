@@ -1,1 +1,1 @@
-# AEM v2.8.2 — Full Credibility Package (testimonials, certificate, media logos, badges, about)
+# AEM v2.8.3 — Credibility Fix & Deep Trust (testimonials, realistic certificate, richer about, full terms/privacy)
