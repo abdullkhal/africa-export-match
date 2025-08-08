@@ -57,3 +57,14 @@ p{color:var(--ink)}
 .footer-inner a{color:#cbd5e1}
 
 .notice{background:#fffbeb;border:1px solid #fef3c7;padding:10px;border-radius:10px;color:#92400e}
+
+/* Testimonials */
+.testimonials .items{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.quote{background:#ffffff;border-left:4px solid var(--brand);padding:16px;border-radius:10px}
+.quote p{margin:0 0 8px}
+.quote .who{color:var(--muted);font-size:.9rem}
+
+/* Logos strip */
+.logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;align-items:center}
+.logos img{max-width:140px;opacity:.8;filter:grayscale(100%);}
+.logos img:hover{opacity:1}
