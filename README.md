@@ -1,1 +1,1 @@
-# AEM v2.8.1 — Bigger header text (80px), spaced nav, light background
+# AEM v2.8.2 — Full Credibility Package (testimonials, certificate, media logos, badges, about)
