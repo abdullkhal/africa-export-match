@@ -1,1 +1,1 @@
-# AEM v2.5 — premium redesign
+# AEM v2.6 — light theme with visuals
